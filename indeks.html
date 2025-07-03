@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     
+    </head>
+<body>
+    <script src="script.js"></script>
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-indigo-600">Portfolio</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#activities" class="nav-link">Activities</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-40 pt-20 px-6">
+        <div class="flex flex-col space-y-6">
+            <a href="#home" class="text-lg nav-link active">Home</a>
+            <a href="#about" class="text-lg nav-link">About</a>
+            <a href="#skills" class="text-lg nav-link">Skills</a>
+            <a href="#education" class="text-lg nav-link">Education</a>
+            <a href="#activities" class="text-lg nav-link">Activities</a>
+            <a href="#contact" class="text-lg nav-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="section gradient-bg text-white flex items-center justify-center">
+        <div class="container mx-auto px-6 text-center">
+            <div class="fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">Hello, I'm <span class="text-yellow-300">Leony Sheeren Palapessy</span></h1>
+                <p class="text-xl md:text-2xl mb-8">Full Stack Developer & UI/UX Designer</p>
+                <a href="#about" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold hover:bg-indigo-100 transition duration-300">
+                    Know Me Better
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">About <span class="text-indigo-600">Me</span></h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-indigo-500 shadow-xl">
+                        <img src="image/Foto profile.jpeg">
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
+                    <p class="text-gray-700 mb-6">
+                        Saya mahasiswa Ilmu Komputer,prodi Informatika Universitas Kristen Indonesia Maluku.
+                        Saya berminat di bidang informatika karena melihat peluang karir yang luas dan menjanjikan di bidang ini.
+                        Saya yakin ilmu yang saya pelajari akan sangat bermanfaat untuk masa depan saya.
+                    </p>
+                    
+                    <h3 class="text-2xl font-semibold mb-4 mt-8">My <span class="text-indigo-600">Hobbies</span></h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                        <div class="hobby-card p-4 rounded-lg border border-gray-200 hover:border-indigo-300 transition">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-code text-3xl text-indigo-600"></i>
+                            </div>
+                            <h4 class="text-center font-semibold">Coding</h4>
+                            <p class="text-sm text-gray-600 text-center">Exploring new technologies and frameworks</p>
+                        </div>
+                        
+                        <div class="hobby-card p-4 rounded-lg border border-gray-200 hover:border-indigo-300 transition">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-book text-3xl text-indigo-600"></i>
+                            </div>
+                            <h4 class="text-center font-semibold">Reading</h4>
+                            <p class="text-sm text-gray-600 text-center">Tech blogs, sci-fi and personal development books</p>
+                        </div>
+                        
+                        <div class="hobby-card p-4 rounded-lg border border-gray-200 hover:border-indigo-300 transition">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-music text-3xl text-indigo-600"></i>
+                            </div>
+                            <h4 class="text-center font-semibold">Music</h4>
+                            <p class="text-sm text-gray-600 text-center">Playing guitar and composing digital music</p>
+                        </div>
+                        
+                        <div class="hobby-card p-4 rounded-lg border border-gray-200 hover:border-indigo-300 transition">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-plane text-3xl text-indigo-600"></i>
+                            </div>
+                            <h4 class="text-center font-semibold">Travel</h4>
+                            <p class="text-sm text-gray-600 text-center">Exploring new cultures and landscapes</p>
+                        </div>
+                        
+                        <div class="hobby-card p-4 rounded-lg border border-gray-200 hover:border-indigo-300 transition">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-camera text-3xl text-indigo-600"></i>
+                            </div>
+                            <h4 class="text-center font-semibold">Photography</h4>
+                            <p class="text-sm text-gray-600 text-center">Capturing moments and urban landscapes</p>
+                        </div>
+                        
+                        <div class="hobby-card p-4 rounded-lg border border-gray-200 hover:border-indigo-300 transition">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-running text-3xl text-indigo-600"></i>
+                            </div>
+                            <h4 class="text-center font-semibold">Sports</h4>
+                            <p class="text-sm text-gray-600 text-center">Running, swimming and hiking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">My <span class="text-indigo-600">Skills</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Technical Skills</h3>
+                    
+                    <div class="skill-item mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">HTML/CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">React</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Node.js</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Professional Skills</h3>
+                    
+                    <div class="skill-item mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Communication</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Teamwork</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Project Management</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Creativity</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12">
+                <h3 class="text-2xl font-semibold mb-6 text-center">Tools & Technologies</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="tech-icon bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center w-24 h-24">
+                        <i class="fab fa-git-alt text-3xl text-indigo-600 mb-2"></i>
+                        <span class="text-xs font-medium">Git</span>
+                    </div>
+                    <div class="tech-icon bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center w-24 h-24">
+                        <i class="fab fa-figma text-3xl text-indigo-600 mb-2"></i>
+                        <span class="text-xs font-medium">Figma</span>
+                    </div>
+                    <div class="tech-icon bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center w-24 h-24">
+                        <i class="fab fa-docker text-3xl text-indigo-600 mb-2"></i>
+                        <span class="text-xs font-medium">Docker</span>
+                    </div>
+                    <div class="tech-icon bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center w-24 h-24">
+                        <i class="fas fa-database text-3xl text-indigo-600 mb-2"></i>
+                        <span class="text-xs font-medium">MySQL</span>
+                    </div>
+                    <div class="tech-icon bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-center w-24 h-24">
+                        <i class="fab fa-aws text-3xl text-indigo-600 mb-2"></i>
+                        <span class="text-xs font-medium">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Education <span class="text-indigo-600">Background</span></h2>
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="content bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold text-indigo-600 mb-2">Progam Studi Informatika</h3>
+                        <h4 class="text-lg font-semibold mb-2">Universitas Kristen Indonesia Maluku</h4>
+                        <p class="text-gray-600 mb-2">2023 - sekarang</p>
+                        <p class="text-gray-700">saya berfokus dalam pembuatan web dan jaringan.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="content bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold text-indigo-600 mb-2"> SMA Negeri 1 Seram Bagian Barat</h3>
+                        <h4 class="text-lg font-semibold mb-2">IPA</h4>
+                        <p class="text-gray-600 mb-2">2021 - 2023</p>
+                        <p class="text-gray-700">Lulus.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="content bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold text-indigo-600 mb-2">LULUS</h3>
+                        <h4 class="text-lg font-semibold mb-2">SMP NEGERI 2 KAIRATU</h4>
+                        <p class="text-gray-600 mb-2">2018 - 2020</p>
+                        <p class="text-gray-700">dengan peringkat 1.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="section bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">My <span class="text-indigo-600">Activities</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Activity 1 -->
+                <div class="card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="card-image">
+                        <img src="image/Basket.jpeg">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Basket </h3>
+                        <p class="text-gray-600 mb-4"> 2022 - sekarang</p>
+                        <p class="text-gray-700">
+                            Di dunia basket saya merasa bahwa saya semakin berkembang
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Activity 2 -->
+                <div class="card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="card-image">
+                        <img src="image/Futsal.jpeg">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Futsal</h3>
+                        <p class="text-gray-600 mb-4">2020 - Present</p>
+                        <p class="text-gray-700">
+                            Dunia olaraga membuat saya semakin merasa bahagia sehingga saya menekuninya
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Activity 3 -->
+                <div class="card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="Voly">
+                        <img src="image/voly.jpeg">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Voly</h3>
+                        <p class="text-gray-600 mb-4">October 2021</p>
+                        <p class="text-gray-700">
+                            saya juga tertarik dan menekuni voly
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Activity 4 -->
+                <div class="card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="card-image">
+                        <img src="image/menulis.jpeg">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Menulis</h3>
+                        <p class="text-gray-600 mb-4">2019 - Present</p>
+                        <p class="text-gray-700">
+                            Menulis merupakan wadah untuk menuangkan rasa ke dalam setiap baitnya
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Activity 5 -->
+                <div class="card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="card-image">
+                        <img src="image/Healing.jpeg">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Traveling</h3>
+                        <p class="text-gray-600 mb-4">2018 - Present</p>
+                        <p class="text-gray-700">
+                            Menikmati keindahan alam ialah salah satu cara manusia bersyukur pada sang pencipta
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Activity 6 -->
+                <div class="card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="card-image">
+                        <img src="image/musik.jpeg">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Musik </h3>
+                        <p class="text-gray-600 mb-4">2017 - Present</p>
+                        <p class="text-gray-700">
+                            mendengar musik salah satu cara untuk masuk ke dalam dunia yang berbeda dan menemukan diri kita yang lain
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Get In <span class="text-indigo-600">Touch</span></h2>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    <p class="text-gray-700 mb-8">
+                        Feel free to reach out to me for job opportunities, collaborations, or just to say hello.
+                        I'm always open to discussing new projects and ideas.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Location</h4>
+                                <p class="text-gray-600">Batu Meja, Ambon - Maluku, Indonesia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <p class="text-gray-600">leonypalapessy@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Phone</h4>
+                                <p class="text-gray-600">+62 081675469023</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.tiktok.com/@onyplpssy" class="social-icon text-gray-600 hover:text-indigo-600 transition">
+                                <i class="fab fa-tiktok-in text-xl"></i>
+                            </a>
+                            <a href="https://github.com/leonypalapessy" class="social-icon text-gray-600 hover:text-indigo-600 transition">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="#" class="social-icon text-gray-600 hover:text-indigo-600 transition">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/leonyplpssy_/" class="social-icon text-gray-600 hover:text-indigo-600 transition">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <form id="contact-form" class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-6">Send Me a Message</h3>
+                        
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                   <p id="name-error" class="text-red-500 text-xs mt-1 hidden">Please enter your name</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                   <p id="email-error" class="text-red-500 text-xs mt-1 hidden">Please enter a valid email</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <input type="text" id="subject" name="subject" required 
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                   <p id="subject-error" class="text-red-500 text-xs mt-1 hidden">Please enter a subject</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required 
+                                      class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                                      <p id="message-error" class="text-red-500 text-xs mt-1 hidden">Please enter your message</p>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-indigo-600 text-white py-3 px-4 rounded-md hover:bg-indigo-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2023 John Doe Portfolio. All rights reserved.</p>
+            <p class="mt-2 text-gray-400">Designed and built with <i class="fas fa-heart text-red-500"></i> by me</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Navigation active state
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', function() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Close mobile menu when clicking a link
+            if (!document.getElementById('mobile-menu').classList.contains('hidden')) {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    const headerOffset = 80;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form validation
+        const contactForm = document.getElementById('contact-form');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const subject = document.getElementById('subject');
+            const message = document.getElementById('message');
+            
+            // Reset errors
+            document.querySelectorAll('[id$="-error"]').forEach(el => {
+                el.classList.add('hidden');
+            });
+            
+            // Validate name
+            if (!name.value.trim()) {
+                document.getElementById('name-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            // Validate email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value)) {
+                document.getElementById('email-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            // Validate subject
+            if (!subject.value.trim()) {
+                document.getElementById('subject-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            // Validate message
+            if (!message.value.trim()) {
+                document.getElementById('message-error').classList.remove('hidden');
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // Form is valid - you would typically send the data to a server here
+                alert('Thank you for your message! I will get back to you soon.');
+                contactForm.reset();
+            }
+        });
+
+        // Animate skill bars on scroll
+        const animateBars = () => {
+            const skillBars = document.querySelectorAll('.skill-progress');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            bar.style.width = width;
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                observer.observe(bar.parentElement);
+            });
+        };
+
+        // Call when the skills section is loaded
+        animateBars();
+    </script>
+</body>
+</html>
+
